@@ -22,20 +22,7 @@ class Organizer{
 
         protected function getExtensions(): array
         {
-            $photo_extensions = $this->extensions['photo_extensions'];
-            $video_extensions = $this->extensions['video_extensions'];
-            $zipp_extensions = $this->extensions['zipp_extensions'];
-            $exe_extensions = $this->extensions['exe_extensions'];
-            $pdf_extensions = $this->extensions['pdf_extensions'];
-
-            $all_extensions = [
-                'IMAGES' => $photo_extensions, 
-                'VIDEOS' => $video_extensions, 
-                'ZIPPS' => $zipp_extensions,
-                'EXES' => $exe_extensions,
-                'PDFS'  => $pdf_extensions
-            ];
-            
+            $all_extensions = $this->extensions;
             return $all_extensions;
         }
 
