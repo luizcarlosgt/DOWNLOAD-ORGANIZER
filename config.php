@@ -1,5 +1,10 @@
 <?php
 
+const PATHS = [
+    // 'Diretorio De Exemplo' => 'D:\\',
+];
+
+
 const EXTENSIONS = [
     'IMAGES' => ['png', 'jpg'],
     'VIDEOS' => ['mp4', 'mov'],

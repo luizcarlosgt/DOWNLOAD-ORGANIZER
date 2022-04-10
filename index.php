@@ -4,14 +4,16 @@
 
     use App\Organizer;
     use App\SystemInfo;
-
+    
     $system = new SystemInfo;
     $user = $system->getUser();
 
-    $paths = [
+    $defalt_paths = [
         'Dowloads' => 'C:\\Users\\'.$user.'\\Downloads\\',
         'Documents' => 'C:\\Users\\'.$user.'\\Documents\\'
     ];
+
+    $paths = array_merge($defalt_paths, PATHS);
 
     foreach($paths as $key => $path){
         $dir_name = $key;
