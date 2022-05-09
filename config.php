@@ -11,5 +11,5 @@ const EXTENSIONS = [
     'ZIPPS' => ['rar', 'zip', 'iso', '7z'],
     'EXES' => ['exe', 'msi'],
     'PDFS' => ['pdf'],
-    'PAGINAS' => ['html', 'webp']
+    'PAGINAS' => ['html', 'webp', 'php']
 ];
